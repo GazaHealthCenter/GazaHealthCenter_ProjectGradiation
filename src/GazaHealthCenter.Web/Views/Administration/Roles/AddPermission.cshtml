@@ -1,0 +1,33 @@
+@model GazaHealthCenter.Objects.Permission
+
+@{
+    ViewBag.Title = "Add Permission";
+}
+
+<h2>Add Permission</h2>
+
+@using (Html.BeginForm())
+
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Area)
+        @Html.TextBoxFor(m => m.Area, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Area)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Controller)
+        @Html.TextBoxFor(m => m.Controller, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Controller)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Action)
+        @Html.TextBoxFor(m => m.Action, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Action)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Permission</button>
+}

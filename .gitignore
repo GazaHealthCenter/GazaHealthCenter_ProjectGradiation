@@ -1,0 +1,12 @@
+/src/GazaHealthCenter.Web/wwwroot/css/**/*.min.css
+/src/GazaHealthCenter.Web/wwwroot/js/**/*.min.js
+/src/GazaHealthCenter.Web/node_modules/
+
+/src/GazaHealthCenter.Web/Logs/
+.vscode/
+.vs/
+bin/
+obj/
+
+*.user
+*.suo
